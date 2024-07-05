@@ -140,6 +140,7 @@ nav {
     display: flex;
     opacity: 1;
     visibility: visible;
+    z-index: 9;
   }
 
   .item {

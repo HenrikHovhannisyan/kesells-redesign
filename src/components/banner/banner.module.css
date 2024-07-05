@@ -1,0 +1,67 @@
+#banner {
+  position: relative;
+}
+
+#banner > img {
+  width: 100%;
+  mask-image: linear-gradient(360deg, #010010 50%, rgba(1, 0, 16, 0) 100%);
+}
+
+.banner_text {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 890px;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*=============== Media Queries for Responsive Design ===============*/
+
+@media screen and (max-width: 1400px) {
+  .banner_text {
+    font-size: 36px;
+    line-height: 54px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner_text {
+    font-size: 32px;
+    line-height: 48px;
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner_text {
+    font-size: 28px;
+    line-height: 42px;
+    max-width: 500px;
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner_text {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 400px;
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner_text {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 300px;
+    top: 40px;
+  }
+}
