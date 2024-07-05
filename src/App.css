@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #01000f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*=============== For medium devices ===============*/
+/* xxl */
+@media screen and (max-width: 1400px) {
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* xl */
+@media screen and (max-width: 1200px) {
 }
-
-.App-link {
-  color: #61dafb;
+/* lg */
+@media screen and (max-width: 992px) {
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* md */
+@media screen and (max-width: 768px) {
+}
+/* md */
+@media screen and (max-width: 576px) {
 }
