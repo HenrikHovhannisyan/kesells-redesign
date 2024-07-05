@@ -1,0 +1,149 @@
+#contact {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  display: grid;
+  justify-content: center;
+}
+
+#contact > h2 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 46.88px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.contact_form {
+  display: flex;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.form_input {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.form_input > label {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 25.78px;
+  color: #ffffff;
+}
+
+.form_input > input,
+.form_input > textarea {
+  border: 2.82px solid #2f77f8;
+  border-radius: 9px;
+  padding: 14px 20px;
+  background-color: transparent;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34.95px;
+  color: #6c6c6c;
+  width: 610px;
+}
+
+.form_input > input::placeholder,
+.form_input > textarea::placeholder {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34.95px;
+  color: #6c6c6c;
+}
+
+.btn {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.78px;
+  color: #010010;
+  padding: 18px 28px;
+  background-color: #2f77f8;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+/*=============== For medium devices ===============*/
+/* xxl */
+@media screen and (max-width: 1400px) {
+  .contact_form {
+    gap: 50px;
+  }
+  .form_input > input,
+  .form_input > textarea {
+    width: 400px;
+  }
+}
+/* lg */
+@media screen and (max-width: 992px) {
+  .form_input > input,
+  .form_input > textarea {
+    width: 300px;
+  }
+}
+/* md */
+@media screen and (max-width: 768px) {
+  #contact {
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
+
+  #contact > h2 {
+    font-size: 35px;
+  }
+
+  .form_input > label {
+    font-size: 20px;
+  }
+
+  .contact_form {
+    flex-direction: column;
+  }
+
+  .form_input > input,
+  .form_input > textarea {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 16px 24px;
+  }
+}
+/* sm */
+@media screen and (max-width: 576px) {
+  #contact {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  #contact > h2 {
+    font-size: 30px;
+  }
+
+  .contact_form {
+    margin-top: 50px;
+  }
+
+  .form_input > label {
+    font-size: 18px;
+  }
+
+  .form_input > input,
+  .form_input > textarea {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+}
