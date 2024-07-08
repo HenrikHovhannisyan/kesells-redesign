@@ -28,21 +28,6 @@ nav {
   color: #ffffff;
 }
 
-.link.active {
-  position: relative;
-}
-
-.link.active::after {
-  content: "";
-  position: absolute;
-  bottom: -28px;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background-color: #2f77f8;
-  border-radius: 30px;
-}
-
 .dropbtn {
   background-color: unset;
   border: none;

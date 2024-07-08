@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Style from "./header.module.css";
 import Logo from "../../assets/logo.png";
 import DropdownLogo from "../../assets/icons/dropdown.png";
@@ -24,29 +24,29 @@ const Header = () => {
         <img src={Logo} alt="Logo" className={Style.logo} />
         <ul className={`${Style.list} ${isOpen ? Style.open : ""}`}>
           <li className={`${Style.item}`}>
-            <Link to="/" className={`${Style.link} ${Style.active}`}>
+            <NavLink to="/" className={`nav_link ${Style.link}`}>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className={Style.item}>
-            <Link to="/" className={Style.link}>
+            <NavLink to="/about" className={`nav_link ${Style.link}`}>
               About us
-            </Link>
+            </NavLink>
           </li>
           <li className={Style.item}>
-            <Link to="/" className={Style.link}>
+            <NavLink to="/link" className={`nav_link ${Style.link}`}>
               Services
-            </Link>
+            </NavLink>
           </li>
           <li className={Style.item}>
-            <Link to="/" className={Style.link}>
+            <NavLink to="/link" className={`nav_link ${Style.link}`}>
               Blog
-            </Link>
+            </NavLink>
           </li>
           <li className={Style.item}>
-            <Link to="/" className={Style.link}>
+            <NavLink to="/link" className={`nav_link ${Style.link}`}>
               Contact
-            </Link>
+            </NavLink>
           </li>
           <div className={Style.dropdown}>
             <button className={Style.dropbtn} onClick={toggleDropdown}>
@@ -61,9 +61,9 @@ const Header = () => {
                 isDropdownOpen ? Style.show : ""
               }`}
             >
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <Link to="#">Link 1</Link>
+              <Link to="#">Link 2</Link>
+              <Link to="#">Link 3</Link>
             </div>
           </div>
         </ul>

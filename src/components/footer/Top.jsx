@@ -16,7 +16,7 @@ const Top = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" className={Style.list_item}>
+          <Link to="/about" className={Style.list_item}>
             About us
           </Link>
         </li>
