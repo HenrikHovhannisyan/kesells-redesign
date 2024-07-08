@@ -87,12 +87,6 @@ nav {
     font-size: 14px;
   }
 
-  .link.active::after {
-    bottom: -18px;
-    height: 7px;
-    border-radius: 30px;
-  }
-
   .logo {
     height: 30px;
   }
@@ -134,12 +128,6 @@ nav {
     padding: 10px 0;
     text-align: center;
     font-size: 18px;
-  }
-
-  .link.active::after {
-    bottom: -15px;
-    height: 5px;
-    border-radius: 15px;
   }
 
   .dropdown {

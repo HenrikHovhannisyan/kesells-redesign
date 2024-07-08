@@ -53,9 +53,19 @@ li {
 }
 /* lg */
 @media screen and (max-width: 992px) {
+  .nav_link.active::after {
+    bottom: -18px;
+    height: 7px;
+    border-radius: 30px;
+  }
 }
 /* md */
 @media screen and (max-width: 768px) {
+  .nav_link.active::after {
+    bottom: -15px;
+    height: 5px;
+    border-radius: 15px;
+  }
 }
 /* md */
 @media screen and (max-width: 576px) {
