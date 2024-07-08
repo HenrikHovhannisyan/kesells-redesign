@@ -5,6 +5,7 @@ import Footer from "../../components/footer/Footer";
 import Banner from "../../components/banner/Banner";
 import Banner_img from "../../assets/banner/about.png";
 import Top from "../../components/info/Top";
+import Proposition from "../../components/proposition/Proposition";
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
           img={Banner_img}
         />
         <Top text="Empowering organizations with innovative AI technologies and SEO strategies.”" />
+        <Proposition />
         <Contact />
       </main>
       <Footer />
