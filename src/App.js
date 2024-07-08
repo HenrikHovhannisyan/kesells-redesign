@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Banner from "./components/banner/Banner";
 import Info from "./components/info/Info";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Info />
         <img src={Seo_img} className="seo_img" alt="Seo" />
         <Contact />
+        <Footer />
       </main>
     </>
   );
