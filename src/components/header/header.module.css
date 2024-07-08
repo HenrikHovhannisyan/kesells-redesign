@@ -3,6 +3,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  position: relative;
+  padding: 0 15px;
 }
 
 .list {

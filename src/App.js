@@ -15,7 +15,9 @@ function App() {
       <main>
         <Banner />
         <Info />
-        <img src={Seo_img} className="seo_img" alt="Seo" />
+        <section className="container">
+          <img src={Seo_img} className="seo_img" alt="Seo" />
+        </section>
         <Contact />
         <Footer />
       </main>
