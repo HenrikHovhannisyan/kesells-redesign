@@ -6,6 +6,7 @@ import Banner from "./components/banner/Banner";
 import Info from "./components/info/Info";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Banner_img from "./assets/banner/home.png";
 
 function App() {
   return (
@@ -13,14 +14,17 @@ function App() {
       <Header />
 
       <main>
-        <Banner />
+        <Banner
+          title="Revolutionizing AI and SEO Solutions for Your Business"
+          img={Banner_img}
+        />
         <Info />
         <section className="container">
           <img src={Seo_img} className="seo_img" alt="Seo" />
         </section>
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
