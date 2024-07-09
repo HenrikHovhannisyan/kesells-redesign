@@ -8,6 +8,7 @@
 .item {
   max-width: 680px;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 .title {
@@ -17,6 +18,7 @@
   line-height: 60px;
   letter-spacing: 0.1em;
   text-align: left;
+  margin-bottom: 60px;
 }
 
 .item_title {
@@ -118,6 +120,7 @@
   .title {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 40px;
   }
 
   .item_title {
@@ -132,5 +135,10 @@
 
   #proposition {
     padding: 30px 10px;
+    background-size: cover;
+  }
+
+  .item {
+    margin-bottom: 40px;
   }
 }
