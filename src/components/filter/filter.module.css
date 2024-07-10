@@ -1,0 +1,157 @@
+#filtr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 15px;
+  margin-bottom: 100px;
+}
+
+#filtr > div {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+
+.filters_btn {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filters_btn > button {
+  padding: 10px 30px;
+  border-radius: 54px;
+  border: 0;
+  background-color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.filters_btn > button.active > span,
+.filters_btn > button.active {
+  color: #010010;
+  background-color: #ffffff;
+}
+
+.serach_form {
+  display: flex;
+  align-items: center;
+  padding: 10px 94px 10px 30px;
+  border-radius: 54px;
+  background-color: #1e1e1e;
+  max-width: 400px;
+  width: 100%;
+}
+
+.serach_form > input,
+.serach_form > input::placeholder {
+  background-color: transparent;
+  border: 0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  letter-spacing: 0.1em;
+  color: #6c6c6c;
+  margin-left: 10px;
+}
+
+/*=============== For medium devices ===============*/
+/* xxl */
+@media screen and (max-width: 1400px) {
+  .filters_btn > button {
+    font-size: 22px;
+  }
+
+  .serach_form {
+    padding: 10px 70px 10px 20px;
+  }
+
+  .serach_form > input {
+    font-size: 22px;
+  }
+}
+/* xl */
+@media screen and (max-width: 1200px) {
+  .filters_btn > button {
+    font-size: 20px;
+  }
+
+  .serach_form {
+    padding: 10px 60px 10px 20px;
+  }
+
+  .serach_form > input {
+    font-size: 20px;
+  }
+}
+/* lg */
+@media screen and (max-width: 992px) {
+  .filters_btn > button {
+    font-size: 18px;
+  }
+
+  .serach_form {
+    padding: 10px 50px 10px 20px;
+  }
+
+  .serach_form > input {
+    font-size: 18px;
+  }
+}
+/* md */
+@media screen and (max-width: 768px) {
+  #filtr {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    margin-bottom: 80px;
+  }
+
+  .filters_btn {
+    gap: 10px;
+  }
+
+  .filters_btn > button {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .serach_form {
+    padding: 10px 30px 10px 15px;
+  }
+
+  .serach_form > input {
+    font-size: 16px;
+  }
+}
+/* sm */
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .filters_btn > button {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  .serach_form {
+    padding: 8px 20px 8px 10px;
+  }
+
+  .serach_form > input {
+    font-size: 14px;
+  }
+}

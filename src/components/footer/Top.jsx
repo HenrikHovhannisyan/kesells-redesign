@@ -26,7 +26,7 @@ const Top = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" className={Style.list_item}>
+          <Link to="/blog" className={Style.list_item}>
             Blog
           </Link>
         </li>

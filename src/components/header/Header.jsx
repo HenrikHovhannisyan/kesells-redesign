@@ -39,7 +39,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li className={Style.item}>
-            <NavLink to="/link" className={`nav_link ${Style.link}`}>
+            <NavLink to="/blog" className={`nav_link ${Style.link}`}>
               Blog
             </NavLink>
           </li>
