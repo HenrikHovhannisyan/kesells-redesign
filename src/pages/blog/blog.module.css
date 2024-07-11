@@ -1,3 +1,8 @@
+.slider {
+  padding: 0 15px;
+  margin-bottom: 130px;
+}
+
 .title {
   margin: 160px auto 70px;
   font-family: Roboto;
@@ -6,4 +11,188 @@
   line-height: 46.88px;
   letter-spacing: 0.1em;
   text-align: center;
+}
+
+.item {
+  height: 500px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 35px;
+}
+
+.item_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: #00000033;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.item_text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.item_type {
+  padding: 10px 30px;
+  border-radius: 54px;
+  background-color: #6c6c6c;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  letter-spacing: 0.1em;
+}
+
+.item_bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.item_date {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  letter-spacing: 0.1em;
+}
+
+.block {
+  margin-bottom: 100px;
+  padding: 0 15px;
+}
+
+.block_title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+
+.block_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* Existing CSS remains the same */
+@media screen and (max-width: 992px) {
+  .item {
+    margin: 0 15px 30px;
+  }
+  .block_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 80px auto 50px;
+  }
+
+  .item_container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .item_title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .item_text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .item_type {
+    font-size: 14px;
+    padding: 8px 25px;
+  }
+
+  .item_date {
+    font-size: 14px;
+  }
+
+  .item_bottom {
+    gap: 15px;
+  }
+
+  .block {
+    margin-bottom: 60px;
+  }
+
+  .block_container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .item {
+    height: 315px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 60px auto 30px;
+  }
+
+  .item_container {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .item_title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .item_text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .item_type {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+
+  .item_date {
+    font-size: 12px;
+  }
+
+  .item_bottom {
+    gap: 10px;
+  }
 }

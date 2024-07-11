@@ -4,7 +4,7 @@ import Magnifier from "../../assets/icons/magnifier.png";
 
 const Filter = () => {
   return (
-    <section id={Style.filtr}>
+    <section id={Style.filtr} className="container">
       <div>
         <p className={Style.title}>Filters</p>
         <div className={Style.filters_btn}>
