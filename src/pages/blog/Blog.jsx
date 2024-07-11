@@ -168,7 +168,7 @@ const Blog = () => {
         </section>
         <section className={Style.block}>
           <h3 className={Style.block_title}>
-            5 Ways AI is Transforming Business Operations
+            The Future of Machine Learning in Marketing
           </h3>
           <div className={Style.block_container}>
             <Item
