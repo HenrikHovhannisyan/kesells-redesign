@@ -19,7 +19,7 @@ const About = () => {
         />
         <Top text="Empowering organizations with innovative AI technologies and SEO strategies.”" />
         <Proposition />
-        <Contact />
+        <Contact title="Get in touch" />
       </main>
       <Footer />
     </>

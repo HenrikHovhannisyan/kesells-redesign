@@ -22,7 +22,7 @@ function App() {
         <section className="container">
           <img src={Seo_img} className="seo_img" alt="Seo" />
         </section>
-        <Contact />
+        <Contact title="Get in touch" />
       </main>
       <Footer />
     </>

@@ -103,7 +103,7 @@
 /* md */
 @media screen and (max-width: 768px) {
   #contact {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 150px;
   }
 
@@ -118,6 +118,7 @@
   .contact_form {
     flex-direction: column;
     gap: 30px;
+    margin-top: 50px;
   }
 
   .form_input > input,

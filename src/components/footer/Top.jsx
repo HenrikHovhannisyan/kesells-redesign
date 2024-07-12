@@ -40,7 +40,7 @@ const Top = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" className={Style.list_item}>
+          <Link to="/contact" className={Style.list_item}>
             Contact
           </Link>
         </li>
@@ -49,12 +49,14 @@ const Top = () => {
         <h3 className={Style.info_title}>GET IN TOUCH</h3>
         <p>2234758916725</p>
         <p>cogioai@gmail.com</p>
-        <Link to="#">
-          <img src={Instagram} alt="Instagram" />
-        </Link>
-        <Link to="#">
-          <img src={Linkedin} alt="Linkedin" />
-        </Link>
+        <div className={Style.footer_icons}>
+          <Link to="#">
+            <img src={Instagram} alt="Instagram" />
+          </Link>
+          <Link to="#">
+            <img src={Linkedin} alt="Linkedin" />
+          </Link>
+        </div>
       </div>
     </div>
   );

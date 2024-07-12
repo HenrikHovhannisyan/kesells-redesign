@@ -105,6 +105,11 @@ footer {
   margin-bottom: 9px;
 }
 
+.footer_icons {
+  display: flex;
+  gap: 10px;
+}
+
 /*=============== For medium devices ===============*/
 /* xxl */
 @media screen and (max-width: 1400px) {
@@ -146,8 +151,16 @@ footer {
     text-align: center;
   }
 
+  .logo_section img {
+    margin: auto;
+  }
+
   .logo_section input {
     width: 200px;
+  }
+
+  .footer_icons {
+    justify-content: center;
   }
 }
 

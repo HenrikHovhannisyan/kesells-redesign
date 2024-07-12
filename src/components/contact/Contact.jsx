@@ -1,10 +1,10 @@
 import React from "react";
 import Style from "./contact.module.css";
 
-const Contact = () => {
+const Contact = ({ title }) => {
   return (
     <section id={Style.contact} className="container">
-      <h2>Get in touch</h2>
+      {title && <h2>{title}</h2>}
       <form action="">
         <div className={Style.contact_form}>
           <div>
