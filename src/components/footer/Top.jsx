@@ -8,7 +8,16 @@ import Linkedin from "../../assets/icons/linkedin.png";
 const Top = () => {
   return (
     <div className={Style.top_section}>
-      <img src={Logo} alt="Logo" height={50} />
+      <div className={Style.logo_section}>
+        <img src={Logo} alt="Logo" height={50} />
+        <form action="">
+          <label htmlFor="email">Subcribe to our newsletter</label>
+          <div>
+            <input type="email" id="email" placeholder="Your email address…" />
+            <button>Subscribe</button>
+          </div>
+        </form>
+      </div>
       <ul className={Style.list}>
         <li>
           <Link to="/" className={Style.list_item}>

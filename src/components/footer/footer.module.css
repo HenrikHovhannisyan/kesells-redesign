@@ -2,6 +2,56 @@ footer {
   padding: 0 15px 40px;
 }
 
+.logo_section {
+  display: grid;
+  gap: 25px;
+}
+
+.logo_section label {
+  display: block;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+.logo_section input {
+  width: 270px;
+  height: 40px;
+  border: 1px solid #b3bdc7;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #92989f;
+}
+
+.logo_section > form > div {
+  display: flex;
+  gap: 8px;
+}
+.logo_section button {
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 22px;
+  background-color: #2f77f8;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.logo_section input::placeholder {
+  color: #92989f;
+}
+
 .copyright {
   font-family: Roboto;
   font-size: 20px;
@@ -14,9 +64,10 @@ footer {
 
 .top_section {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  margin-bottom: 130px;
 }
 
 .list {
@@ -80,10 +131,9 @@ footer {
 /* lg */
 @media screen and (max-width: 992px) {
   .top_section {
-    flex-direction: column;
-    align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .list {
@@ -94,6 +144,10 @@ footer {
 
   .info {
     text-align: center;
+  }
+
+  .logo_section input {
+    width: 200px;
   }
 }
 
