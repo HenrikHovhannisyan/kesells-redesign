@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="container">
         <Banner
           title="About US"
           text="At Cogio AI, we specialize in developing cutting-edge AI and SEO solutions tailored to your business needs. Our team of experts is dedicated to delivering innovative strategies that drive growth and success.”"

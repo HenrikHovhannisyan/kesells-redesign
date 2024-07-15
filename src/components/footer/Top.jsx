@@ -13,7 +13,12 @@ const Top = () => {
         <form action="">
           <label htmlFor="email">Subcribe to our newsletter</label>
           <div>
-            <input type="email" id="email" placeholder="Your email address…" />
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email address…"
+              required
+            />
             <button>Subscribe</button>
           </div>
         </form>
@@ -30,7 +35,7 @@ const Top = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" className={Style.list_item}>
+          <Link to="/services" className={Style.list_item}>
             Services
           </Link>
         </li>

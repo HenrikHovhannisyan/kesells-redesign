@@ -13,13 +13,13 @@ function App() {
     <>
       <Header />
 
-      <main>
+      <main className="container">
         <Banner
           title="Revolutionizing AI and SEO Solutions for Your Business"
           img={Banner_img}
         />
         <Info />
-        <section className="container">
+        <section>
           <img src={Seo_img} className="seo_img" alt="Seo" />
         </section>
         <Contact title="Get in touch" />

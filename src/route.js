@@ -4,6 +4,7 @@ import App from "./App";
 import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import ContactUs from "./pages/contact-us/ContactUs";
+import Services from "./pages/services/Services";
 
 const RouteList = () => {
   return (
@@ -13,6 +14,7 @@ const RouteList = () => {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </BrowserRouter>
   );

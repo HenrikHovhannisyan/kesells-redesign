@@ -11,7 +11,7 @@ const ContactUs = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="container">
         <section id={Style.contact_us}>
           <h2>Contact Us</h2>
           <div className={Style.contact_info}>

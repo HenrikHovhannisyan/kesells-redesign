@@ -4,7 +4,7 @@ import Item from "./Item";
 
 const Proposition = () => {
   return (
-    <section id={Style.proposition} className="container">
+    <section id={Style.proposition}>
       <h3 className={Style.title}>Value proposition</h3>
       <Item
         title="High preference"

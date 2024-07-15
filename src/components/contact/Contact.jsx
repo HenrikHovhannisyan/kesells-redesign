@@ -3,7 +3,7 @@ import Style from "./contact.module.css";
 
 const Contact = ({ title }) => {
   return (
-    <section id={Style.contact} className="container">
+    <section id={Style.contact}>
       {title && <h2>{title}</h2>}
       <form action="">
         <div className={Style.contact_form}>
@@ -14,15 +14,26 @@ const Contact = ({ title }) => {
                 type="text"
                 id="first_name"
                 placeholder="Enter your name"
+                required
               />
             </div>
             <div className={Style.form_input}>
               <label htmlFor="last_name">Last name</label>
-              <input type="text" id="last_name" placeholder="Company name" />
+              <input
+                type="text"
+                id="last_name"
+                placeholder="Company name"
+                required
+              />
             </div>
             <div className={Style.form_input}>
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" placeholder="Enter your email" />
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
             </div>
           </div>
           <div>
@@ -32,6 +43,7 @@ const Contact = ({ title }) => {
                 id="message"
                 placeholder="Enter your message"
                 rows={5}
+                required
               ></textarea>
             </div>
           </div>
