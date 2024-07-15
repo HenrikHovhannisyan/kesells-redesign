@@ -12,13 +12,14 @@
   top: 150px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 890px;
+  max-width: 950px;
   font-family: Roboto;
   font-size: 40px;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.1em;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
