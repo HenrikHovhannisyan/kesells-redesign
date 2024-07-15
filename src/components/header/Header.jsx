@@ -21,7 +21,9 @@ const Header = () => {
   return (
     <header className="container">
       <nav>
-        <img src={Logo} alt="Logo" className={Style.logo} />
+        <Link to="/">
+          <img src={Logo} alt="Logo" className={Style.logo} />
+        </Link>
         <ul className={`${Style.list} ${isOpen ? Style.open : ""}`}>
           <li className={`${Style.item}`}>
             <NavLink to="/" className={`nav_link ${Style.link}`}>
