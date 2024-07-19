@@ -7,6 +7,7 @@ import Info from "./components/info/Info";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Banner_img from "./assets/banner/home.png";
+import Testimonials from "./components/testimonials/Testimonials";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <img src={Seo_img} className="seo_img" alt="Seo" />
         </section>
         <Contact title="Get in touch" />
+        <Testimonials />
       </main>
       <Footer />
     </>
